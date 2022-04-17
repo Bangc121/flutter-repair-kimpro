@@ -4,7 +4,10 @@ import 'package:kimpro/ui/totalService/totalService.dart';
 import 'package:kimpro/stores/post/post_store.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../data/sharedpref/constants/preferences.dart';
+import '../../utils/routes/routes.dart';
 import '../list/list.dart';
 
 class BottomTabScreen extends StatefulWidget {
@@ -87,6 +90,10 @@ class _BottomTabScreenState extends State<BottomTabScreen> {
   Widget _buildMenuButton() {
     return IconButton(
       onPressed: () {
+        SharedPreferences.getInstance().then((preference) {
+          preference.setBool(Preferences.is_logged_in, false);
+          Navigator.of(context).pushReplacementNamed(Routes.login);
+        });
       },
       icon: Icon(
         Icons.menu,

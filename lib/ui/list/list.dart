@@ -10,7 +10,6 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:developer' as developer;
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:intl/intl.dart';
 
 class ListScreen extends StatefulWidget {
   @override
@@ -53,24 +52,22 @@ class _ListScreenState extends State<ListScreen> {
         if (snapshot.hasError) {
           return Text('Something went wrong');
         }
-
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Text("Loading");
         }
-
         return ListView(
           children: snapshot.data!.docs.map((DocumentSnapshot document) {
             Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
-            // return (
-            //     titleSection
-            // );
-            return ListTile(
-              onTap: () {
-                Navigator.of(context).pushNamed(Routes.estimateDetail);
-              },
-              title: Text(data['place']),
-              subtitle: Text(data['situation']),
+            return (
+                titleSection
             );
+            // return ListTile(
+            //   onTap: () {
+            //     Navigator.of(context).pushNamed(Routes.estimateDetail);
+            //   },
+            //   title: Text(data['place']),
+            //   subtitle: Text(data['situation']),
+            // );
           }).toList(),
         );
       },
