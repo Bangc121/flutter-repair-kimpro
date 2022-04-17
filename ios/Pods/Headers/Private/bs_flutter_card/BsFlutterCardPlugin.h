@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/bs_flutter_card/ios/Classes/BsFlutterCardPlugin.h

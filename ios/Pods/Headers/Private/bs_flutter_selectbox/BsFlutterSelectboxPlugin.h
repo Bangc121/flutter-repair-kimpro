@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/bs_flutter_selectbox/ios/Classes/BsFlutterSelectboxPlugin.h

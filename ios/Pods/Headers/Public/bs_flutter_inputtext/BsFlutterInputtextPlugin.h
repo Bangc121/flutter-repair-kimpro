@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/bs_flutter_inputtext/ios/Classes/BsFlutterInputtextPlugin.h

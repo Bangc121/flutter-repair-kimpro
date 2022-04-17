@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/bs_flutter_responsive/ios/Classes/BsFlutterResponsivePlugin.h

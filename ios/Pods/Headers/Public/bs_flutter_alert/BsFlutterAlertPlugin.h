@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/bs_flutter_alert/ios/Classes/BsFlutterAlertPlugin.h

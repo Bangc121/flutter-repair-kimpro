@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/bs_flutter_utils/ios/Classes/BsFlutterUtilsPlugin.h

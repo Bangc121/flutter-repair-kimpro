@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "521799382561",
+    "project_id": "flutter-repair-kimpro",
+    "storage_bucket": "flutter-repair-kimpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521799382561:android:a24f5457cdc4530bd01560",
+        "android_client_info": {
+          "package_name": "com.repair.kimpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521799382561-6i3vaunsfcv3j91h2jeu8heuthkfe93t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBARBegx4KhaoJLeld5UZ5YUZ7fhdZQxjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521799382561-6i3vaunsfcv3j91h2jeu8heuthkfe93t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "521799382561-6l3paujpovl3olo57c1eaj470578ajh1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.repair.kimpro"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

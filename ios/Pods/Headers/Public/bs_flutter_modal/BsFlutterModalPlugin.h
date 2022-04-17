@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/bs_flutter_modal/ios/Classes/BsFlutterModalPlugin.h

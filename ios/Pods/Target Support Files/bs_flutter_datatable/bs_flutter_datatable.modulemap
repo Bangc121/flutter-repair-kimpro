@@ -1,0 +1,6 @@
+module bs_flutter_datatable {
+  umbrella header "bs_flutter_datatable-umbrella.h"
+
+  export *
+  module * { export * }
+}
