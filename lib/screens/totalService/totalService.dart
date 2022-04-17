@@ -3,7 +3,7 @@ import 'package:kimpro/data/repository.dart';
 import 'package:kimpro/data/sharedpref/constants/preferences.dart';
 import 'package:kimpro/di/components/service_locator.dart';
 import 'package:kimpro/stores/user/user_store.dart';
-import 'package:kimpro/ui/profile/profile.dart';
+import 'package:kimpro/screens/profile/profile.dart';
 import 'package:kimpro/utils/routes/routes.dart';
 import 'package:kimpro/stores/language/language_store.dart';
 import 'package:kimpro/stores/post/post_store.dart';

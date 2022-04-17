@@ -1,6 +1,6 @@
-import 'package:kimpro/ui/home/home.dart';
-import 'package:kimpro/ui/profile/profile.dart';
-import 'package:kimpro/ui/totalService/totalService.dart';
+import 'package:kimpro/screens/home/home.dart';
+import 'package:kimpro/screens/profile/profile.dart';
+import 'package:kimpro/screens/totalService/totalService.dart';
 import 'package:kimpro/stores/post/post_store.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

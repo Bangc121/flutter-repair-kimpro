@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:kimpro/ui/my_app.dart';
+import 'package:kimpro/screens/my_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

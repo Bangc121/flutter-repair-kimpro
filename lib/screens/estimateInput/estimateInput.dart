@@ -247,16 +247,16 @@ class _EstimateInputScreenState extends State<EstimateInputScreen> {
       var now = new DateTime.now();
 
       // 문서 작성
-      await FirebaseFirestore.instance.collection('Estimate').add({
-        'id': 0,
-        'place': this.place,
-        'situation': this.situation,
-        'detail': this.detail,
-        'target': this.target,
-        'imageUrl': downloadUrl,
-        'create_at': now,
-        'update_at': now,
-      });
+      // await FirebaseFirestore.instance.collection('Estimate').add({
+      //   'id': 0,
+      //   'place': this.place,
+      //   'situation': this.situation,
+      //   'detail': this.detail,
+      //   'target': this.target,
+      //   'imageUrl': downloadUrl,
+      //   'create_at': now,
+      //   'update_at': now,
+      // });
 
       final snackBar = SnackBar(
         content: const Text('저장완료'),

@@ -1,13 +1,13 @@
-import 'package:kimpro/ui/bottomTab/bottomTab.dart';
-import 'package:kimpro/ui/estimateDetail/estimateDetail.dart';
-import 'package:kimpro/ui/home/home.dart';
-import 'package:kimpro/ui/login/login.dart';
-import 'package:kimpro/ui/estimateInput/estimateInput.dart';
-import 'package:kimpro/ui/scheduleInput/scheduleInput.dart';
-import 'package:kimpro/ui/splash/splash.dart';
-import 'package:kimpro/ui/list/list.dart';
-import 'package:kimpro/ui/totalService/totalService.dart';
-import 'package:kimpro/ui/addressInput/addressInput.dart';
+import 'package:kimpro/screens/bottomTab/bottomTab.dart';
+import 'package:kimpro/screens/estimateDetail/estimateDetail.dart';
+import 'package:kimpro/screens/home/home.dart';
+import 'package:kimpro/screens/login/login.dart';
+import 'package:kimpro/screens/estimateInput/estimateInput.dart';
+import 'package:kimpro/screens/scheduleInput/scheduleInput.dart';
+import 'package:kimpro/screens/splash/splash.dart';
+import 'package:kimpro/screens/list/list.dart';
+import 'package:kimpro/screens/totalService/totalService.dart';
+import 'package:kimpro/screens/addressInput/addressInput.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
