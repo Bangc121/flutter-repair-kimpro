@@ -1,9 +1,8 @@
 import 'package:another_flushbar/flushbar_helper.dart';
-import 'package:kimpro/stores/language/language_store.dart';
-import 'package:kimpro/stores/post/post_store.dart';
-import 'package:kimpro/utils/locale/app_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:kimpro/stores/post/post_store.dart';
+import 'package:kimpro/utils/locale/app_localization.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -38,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('홈')),
       body: _buildBody(),
     );
   }
