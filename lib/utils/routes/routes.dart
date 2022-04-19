@@ -1,4 +1,5 @@
 import 'package:kimpro/screens/bottomTab/bottomTab.dart';
+import 'package:kimpro/screens/debug/debug.dart';
 import 'package:kimpro/screens/estimateDetail/estimateDetail.dart';
 import 'package:kimpro/screens/home/home.dart';
 import 'package:kimpro/screens/login/add_profile.dart';
@@ -30,6 +31,7 @@ class Routes {
   static const String addProfileSelect = '/add-profile-select';
   static const String addProfile = '/add-profile';
   static const String addProfilePro = '/add-profile-pro';
+  static const String debug = '/debug';
 
   static final routes = <String, WidgetBuilder>{
     splash: (BuildContext context) => SplashScreen(),
@@ -45,6 +47,7 @@ class Routes {
     addProfileSelect: (BuildContext context) => AddProfileSelectScreen(),
     addProfile: (BuildContext context) => AddProfileScreen(),
     addProfilePro: (BuildContext context) => AddProfileProScreen(),
+    debug: (BuildContext context) => DebugScreen(),
   };
 }
 

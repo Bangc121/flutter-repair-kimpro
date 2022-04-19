@@ -83,17 +83,17 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 400.0,
                 child: const Text('logo'),
               ),
-              ElevatedButton(
-                  child: Text('카카오', style: Theme.of(context).textTheme.headline5),
-                  style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFFFFE600),
-                    elevation: 4,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                    padding: const EdgeInsets.symmetric(vertical: 10.0),
-                  ),
-                  onPressed: () => _kakaoLogin()),
+              // ElevatedButton(
+              //     child: Text('카카오', style: Theme.of(context).textTheme.headline5),
+              //     style: ElevatedButton.styleFrom(
+              //       primary: const Color(0xFFFFE600),
+              //       elevation: 4,
+              //       shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(5.0),
+              //       ),
+              //       padding: const EdgeInsets.symmetric(vertical: 10.0),
+              //     ),
+              //     onPressed: () => _kakaoLogin()),
               const SizedBox(
                 height: 10.0,
               ),
