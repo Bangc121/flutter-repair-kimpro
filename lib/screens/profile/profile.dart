@@ -40,6 +40,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // appBar: _builProfileAppBar(),
+      body: Column(
+        children: [
+          SizedBox(height: 20),
+          ProfileHeader(),
+          SizedBox(height: 20),
+        ],
+      ),
+    );
+  }
+
+  AppBar _builProfileAppBar() {
+    return AppBar(
+      leading: Icon(Icons.arrow_back_ios),
+      title: Text("마이페이지"),
+      centerTitle: true,
     );
   }
 
@@ -77,5 +93,28 @@ class _ProfileScreenState extends State<ProfileScreen> {
     });
 
     return SizedBox.shrink();
+  }
+}
+
+class ProfileHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        SizedBox(width: 20),
+        _buildHeaderAvatar(),
+        SizedBox(width: 20),
+      ],
+    );
+  }
+
+  Widget _buildHeaderAvatar() {
+    return SizedBox(
+      width: 100,
+      height: 100,
+      child: CircleAvatar(
+        backgroundImage: AssetImage("assets/images/avatar.png"),
+      ),
+    );
   }
 }
