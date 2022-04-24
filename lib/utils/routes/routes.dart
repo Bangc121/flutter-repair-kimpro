@@ -1,10 +1,14 @@
 import 'package:kimpro/screens/bottomTab/bottomTab.dart';
+import 'package:kimpro/screens/debug/debug.dart';
 import 'package:kimpro/screens/estimateDetail/estimateDetail.dart';
 import 'package:kimpro/screens/home/home.dart';
+import 'package:kimpro/screens/login/add_profile.dart';
+import 'package:kimpro/screens/login/add_profile_pro.dart';
+import 'package:kimpro/screens/login/add_profile_select.dart';
 import 'package:kimpro/screens/login/login.dart';
 import 'package:kimpro/screens/estimateInput/estimateInput.dart';
+import 'package:kimpro/screens/login/splash.dart';
 import 'package:kimpro/screens/scheduleInput/scheduleInput.dart';
-import 'package:kimpro/screens/splash/splash.dart';
 import 'package:kimpro/screens/list/list.dart';
 import 'package:kimpro/screens/totalService/totalService.dart';
 import 'package:kimpro/screens/addressInput/addressInput.dart';
@@ -24,6 +28,10 @@ class Routes {
   static const String estimateInput = '/estimateInput';
   static const String list = '/list';
   static const String estimateDetail = '/estimateDetail';
+  static const String addProfileSelect = '/add-profile-select';
+  static const String addProfile = '/add-profile';
+  static const String addProfilePro = '/add-profile-pro';
+  static const String debug = '/debug';
 
   static final routes = <String, WidgetBuilder>{
     splash: (BuildContext context) => SplashScreen(),
@@ -35,7 +43,11 @@ class Routes {
     scheduleInput: (BuildContext context) => ScheduleInputScreen(),
     estimateInput: (BuildContext context) => EstimateInputScreen(),
     list: (BuildContext context) => ListScreen(),
-    estimateDetail: (BuildContext context) => EstimateDetailScreen()
+    estimateDetail: (BuildContext context) => EstimateDetailScreen(),
+    addProfileSelect: (BuildContext context) => AddProfileSelectScreen(),
+    addProfile: (BuildContext context) => AddProfileScreen(),
+    addProfilePro: (BuildContext context) => AddProfileProScreen(),
+    debug: (BuildContext context) => DebugScreen(),
   };
 }
 

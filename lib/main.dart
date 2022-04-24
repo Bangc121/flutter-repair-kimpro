@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:kimpro/screens/my_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'di/components/service_locator.dart';
 
@@ -14,7 +15,8 @@ Future<void> main() async {
   await setPreferredOrientations();
   await setupLocator();
   return runZonedGuarded(() async {
-    runApp(MyApp());
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    runApp(MyApp(prefs: prefs));
   }, (error, stack) {
     print(stack);
     print(error);
