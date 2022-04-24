@@ -104,6 +104,7 @@ class ProfileHeader extends StatelessWidget {
         SizedBox(width: 20),
         _buildHeaderAvatar(),
         SizedBox(width: 20),
+        _buildHeaderProfile(),
       ],
     );
   }
@@ -115,6 +116,33 @@ class ProfileHeader extends StatelessWidget {
       child: CircleAvatar(
         backgroundImage: AssetImage("assets/images/avatar.png"),
       ),
+    );
+  }
+
+  Widget _buildHeaderProfile() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "사용명",
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+        Text(
+          "test@test.com",
+          style: TextStyle(
+            fontSize: 15,
+          ),
+        ),
+        // Text(
+        //   "데어 프로그래밍",
+        //   style: TextStyle(
+        //     fontSize: 15,
+        //   ),
+        // ),
+      ],
     );
   }
 }
