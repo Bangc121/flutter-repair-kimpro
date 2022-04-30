@@ -124,7 +124,7 @@ class ProfileHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "사용명",
+          "사용자명",
           style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.w700,
