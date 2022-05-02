@@ -24,7 +24,7 @@ import 'package:firebase_auth/firebase_auth.dart' as firebase_auth;
 class MyApp extends StatelessWidget {
   final PostStore _postStore = PostStore(getIt<Repository>());
   final LanguageStore _languageStore = LanguageStore(getIt<Repository>());
-  final UserStore _userStore = UserStore(getIt<Repository>());
+  // final UserStore _userStore = UserStore(getIt<Repository>());
 
   final SharedPreferences prefs;
 

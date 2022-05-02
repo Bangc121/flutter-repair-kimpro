@@ -50,5 +50,5 @@ Future<void> setupLocator() async {
   // stores:--------------------------------------------------------------------
   getIt.registerSingleton(LanguageStore(getIt<Repository>()));
   getIt.registerSingleton(PostStore(getIt<Repository>()));
-  getIt.registerSingleton(UserStore(getIt<Repository>()));
+  // getIt.registerSingleton(UserStore(getIt<Repository>()));
 }
