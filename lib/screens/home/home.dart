@@ -14,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   //stores:---------------------------------------------------------------------
-  late PostStore _postStore;
+  // late PostStore _postStore;
 
   int _selectedIndex = 0;
 
@@ -33,12 +33,12 @@ class _HomeScreenState extends State<HomeScreen> {
     super.didChangeDependencies();
 
     // initializing stores
-    _postStore = Provider.of<PostStore>(context);
-
-    // check to see if already called api
-    if (!_postStore.loading) {
-      _postStore.getPosts();
-    }
+    // _postStore = Provider.of<PostStore>(context);
+    //
+    // // check to see if already called api
+    // if (!_postStore.loading) {
+    //   _postStore.getPosts();
+    // }
   }
 
   @override
@@ -94,17 +94,17 @@ class _HomeScreenState extends State<HomeScreen> {
     return result;
   }
 
-  Widget _handleErrorMessage() {
-    return Observer(
-      builder: (context) {
-        if (_postStore.errorStore.errorMessage.isNotEmpty) {
-          return _showErrorMessage(_postStore.errorStore.errorMessage);
-        }
-
-        return SizedBox.shrink();
-      },
-    );
-  }
+  // Widget _handleErrorMessage() {
+  //   return Observer(
+  //     builder: (context) {
+  //       if (_postStore.errorStore.errorMessage.isNotEmpty) {
+  //         return _showErrorMessage(_postStore.errorStore.errorMessage);
+  //       }
+  //
+  //       return SizedBox.shrink();
+  //     },
+  //   );
+  // }
 
   // General Methods:-----------------------------------------------------------
   _showErrorMessage(String message) {
