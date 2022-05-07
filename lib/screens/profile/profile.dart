@@ -7,7 +7,7 @@ import 'package:kimpro/utils/locale/app_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
-import '../notice/noticel_page.dart';
+import '../notice/notice_page.dart';
 import '../tutorial/tutorial_page.dart';
 import 'card_icon_menu.dart';
 import 'dart:developer' as developer;

@@ -1,4 +1,5 @@
 import 'package:kimpro/screens/home/home.dart';
+import 'package:kimpro/screens/notice/notice_page.dart';
 import 'package:kimpro/screens/profile/profile.dart';
 import 'package:kimpro/screens/totalService/totalService.dart';
 import 'package:kimpro/stores/post/post_store.dart';
@@ -106,6 +107,7 @@ class _BottomTabScreenState extends State<BottomTabScreen> {
     TotalServiceScreen(),
     ListScreen(),
     ProfileScreen(),
+    // NoticeScreen(),
   ];
 
   Widget _buildTabBody() {
