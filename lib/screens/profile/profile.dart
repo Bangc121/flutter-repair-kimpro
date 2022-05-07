@@ -1,4 +1,5 @@
 import 'package:another_flushbar/flushbar_helper.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:kimpro/models/profile/icon_menu.dart';
 import 'package:kimpro/stores/user/user_store.dart';
 import 'package:kimpro/stores/post/post_store.dart';
@@ -6,6 +7,8 @@ import 'package:kimpro/utils/locale/app_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
+import '../notice/noticel_page.dart';
+import '../tutorial/tutorial_page.dart';
 import 'card_icon_menu.dart';
 import 'dart:developer' as developer;
 
@@ -55,10 +58,134 @@ class _ProfileScreenState extends State<ProfileScreen> {
           //서비스 안내
           ProfileServiceInfo(),
           //
-          CardIconMenu(
-            iconMenuList: iconMenu1,
-          ),
+          // CardIconMenu(
+          //   iconMenuList: iconMenu1,
+          // ),
+          _buildRowIconItemTutorial('튜토리얼', FontAwesomeIcons.mapMarkerAlt, context), //IconMenu(title: '튜토리얼', iconData: FontAwesomeIcons.mapMarkerAlt)
+          _buildRowIconItemNotice('공지사항', FontAwesomeIcons.mapMarkerAlt, context), //IconMenu(title: '튜토리얼', iconData: FontAwesomeIcons.mapMarkerAlt)// ,
         ],
+      ),
+    );
+  }
+
+  //아이콘
+  Widget _buildRowIconItemTutorial(String title, IconData iconData, BuildContext context) {
+    return Container(
+      height: 50,
+      child: InkWell(
+          onTap: () {
+            //페이지 이동
+            print('aaa : 해당 페이지로 이동.');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => TutorialScreen()),
+            );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => SecondRoute()),
+            // );
+          }, // Handle your callback
+          child: Column(
+            // padding: EdgeInsets.all(12.0),
+            children: [
+              Icon(iconData, size: 17),
+              const SizedBox(width: 20),
+              Text(
+                title,
+              )
+              // Text(title, style: textTheme().subtitle1)
+            ],
+          )
+        // child: Ink(height: 100, width: 100, color: Colors.blue),
+        // children: [
+        //   Icon(iconData, size: 17),
+        //   const SizedBox(width: 20),
+        //   Text(
+        //     title,
+        //   )
+        //   // Text(title, style: textTheme().subtitle1)
+        // ],
+      ),
+    );
+  }
+
+  //아이콘
+  Widget _buildRowIconItemNotice(String title, IconData iconData, BuildContext context) {
+    return Container(
+      height: 50,
+      child: InkWell(
+          onTap: () {
+            //페이지 이동
+            print('aaa : 해당 페이지로 이동.');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => NoticeScreen()),
+            );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => SecondRoute()),
+            // );
+          }, // Handle your callback
+          child: Column(
+            // padding: EdgeInsets.all(12.0),
+            children: [
+              Icon(iconData, size: 17),
+              const SizedBox(width: 20),
+              Text(
+                title,
+              )
+              // Text(title, style: textTheme().subtitle1)
+            ],
+          )
+        // child: Ink(height: 100, width: 100, color: Colors.blue),
+        // children: [
+        //   Icon(iconData, size: 17),
+        //   const SizedBox(width: 20),
+        //   Text(
+        //     title,
+        //   )
+        //   // Text(title, style: textTheme().subtitle1)
+        // ],
+      ),
+    );
+  }
+
+  Widget _buildRowIconItem(String title, IconData iconData, BuildContext context) {
+    return Container(
+      height: 50,
+      child: InkWell(
+          onTap: () {
+            //페이지 이동
+            print('aaa : 해당 페이지로 이동.');
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => NoticeScreen()),
+            );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder: (context) => SecondRoute()),
+            // );
+          }, // Handle your callback
+          child: Column(
+            // padding: EdgeInsets.all(12.0),
+            children: [
+              Icon(iconData, size: 17),
+              const SizedBox(width: 20),
+              Text(
+                title,
+              )
+              // Text(title, style: textTheme().subtitle1)
+            ],
+          )
+        // child: Ink(height: 100, width: 100, color: Colors.blue),
+        // children: [
+        //   Icon(iconData, size: 17),
+        //   const SizedBox(width: 20),
+        //   Text(
+        //     title,
+        //   )
+        //   // Text(title, style: textTheme().subtitle1)
+        // ],
       ),
     );
   }
@@ -166,16 +293,20 @@ class ProfileButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        _buildFollowButton(),
+        _buildFollowButton(context),
         // _buildMessageButton(),
       ],
     );
   }
 
-  Widget _buildFollowButton() {
+  Widget _buildFollowButton(BuildContext context) {
     return InkWell(
       onTap: () {
         print("프로필 수정");
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => TutorialScreen()),
+        );
       },
       child: Container(
         alignment: Alignment.center,
